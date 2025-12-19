@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>20251219 – Cumbre Dual – 3D View</title>
+  <title>Cumbre Dual – Interactive 3D</title>
 
   <style>
     html, body {
@@ -19,10 +19,10 @@
       position: relative;
       width: 100%;
       height: 100vh;
-      max-height: 100vh;
+      overflow: hidden;
     }
 
-    /* Maintain 16:9 ratio */
+    /* Responsive 16:9 ratio */
     .sketchfab-wrapper::before {
       content: "";
       display: block;
@@ -38,13 +38,13 @@
       border: 0;
     }
 
-    /* Optional: small footer label */
+    /* Optional subtle label */
     .footer {
       position: fixed;
       bottom: 12px;
       right: 16px;
       font-size: 12px;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.45);
       pointer-events: none;
     }
   </style>
@@ -55,14 +55,20 @@
   <div class="sketchfab-wrapper">
     <iframe
       title="20251219_Cumbre Dual_Realtime_8K"
-      allowfullscreen
       allow="autoplay; fullscreen; xr-spatial-tracking"
-      src="https://sketchfab.com/models/6a053ecbfc814aa48e37e2cc7f7e11da/embed?ui_infos=0&ui_controls=1&ui_watermark=0"
-    ></iframe>
+      allowfullscreen
+      src="https://sketchfab.com/models/6a053ecbfc814aa48e37e2cc7f7e11da/embed
+        ?autostart=1
+        &mute=1
+        &ui_infos=0
+        &ui_controls=0
+        &ui_hint=0
+        &ui_watermark=0">
+    </iframe>
   </div>
 
   <div class="footer">
-    Cumbre Dual — Interactive 3D
+    Cumbre Dual — Interactive 3D View
   </div>
 
 </body>
